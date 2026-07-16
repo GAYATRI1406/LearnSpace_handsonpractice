@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/*
+  Custom design system (Tailwind v4 CSS-first configuration).
+  Tokens defined here generate utilities automatically:
+  --color-primary  -> bg-primary, text-primary, border-primary ...
+  --font-heading   -> font-heading
+*/
+@theme {
+  /* Fonts */
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand colors */
+  --color-primary: #2563eb; /* blue */
+  --color-primary-dark: #1d4ed8;
+  --color-primary-light: #dbeafe;
+  --color-secondary: #7c3aed; /* purple */
+  --color-secondary-dark: #6d28d9;
+  --color-secondary-light: #ede9fe;
+
+  /* Page background */
+  --color-surface: #f8fafc;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-surface);
+    color: var(--color-slate-800);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+  }
+}
