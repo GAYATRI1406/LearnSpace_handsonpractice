@@ -6,7 +6,7 @@ import {
   FiYoutube,
 } from "react-icons/fi";
 
-const footerLinks = ["Home", "Explore Courses", "My Learning", "Profile"];
+const footerLinks = ["Home","Explore Courses", "My Learning", "Profile"];
 
 const socialIcons = [
   { icon: FiGithub, label: "GitHub" },
