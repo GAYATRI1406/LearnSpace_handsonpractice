@@ -12,6 +12,12 @@ export const courses = [
     image: "https://picsum.photos/seed/react-course/640/360",
     progress: 65,
     status: "In Progress",
+
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
   {
     id: 2,
@@ -22,6 +28,12 @@ export const courses = [
     image: "https://picsum.photos/seed/tailwind-course/640/360",
     progress: 100,
     status: "Completed",
+
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
   {
     id: 3,
@@ -32,6 +44,12 @@ export const courses = [
     image: "https://picsum.photos/seed/aws-course/640/360",
     progress: 40,
     status: "In Progress",
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
+
   },
   {
     id: 4,
@@ -42,6 +60,11 @@ export const courses = [
     image: "https://picsum.photos/seed/design-course/640/360",
     progress: 0,
     status: "Not Started",
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
   {
     id: 5,
@@ -52,6 +75,11 @@ export const courses = [
     image: "https://picsum.photos/seed/docker-course/640/360",
     progress: 25,
     status: "In Progress",
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
   {
     id: 6,
@@ -62,6 +90,11 @@ export const courses = [
     image: "https://picsum.photos/seed/js-course/640/360",
     progress: 100,
     status: "Completed",
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
   {
     id: 7,
@@ -72,6 +105,11 @@ export const courses = [
     image: "https://picsum.photos/seed/azure-course/640/360",
     progress: 0,
     status: "Not Started",
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
   {
     id: 8,
@@ -82,6 +120,11 @@ export const courses = [
     image: "https://picsum.photos/seed/figma-course/640/360",
     progress: 80,
     status: "In Progress",
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
   {
     id: 9,
@@ -92,6 +135,11 @@ export const courses = [
     image: "https://picsum.photos/seed/cicd-course/640/360",
     progress: 100,
     status: "Completed",
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
   {
     id: 10,
@@ -102,6 +150,11 @@ export const courses = [
     image: "https://picsum.photos/seed/node-course/640/360",
     progress: 0,
     status: "Not Started",
+    instructor: "John Doe",
+  rating: 4.8,
+  duration: "18 Hours",
+  level: "Beginner",
+  students: "12,450",
   },
 ];
 

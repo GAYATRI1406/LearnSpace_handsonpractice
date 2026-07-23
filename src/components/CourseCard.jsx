@@ -11,8 +11,8 @@ const buttonLabels = {
   "In Progress": "Continue Learning",
   "Not Started": "Start Course",
 };
+function CourseCard({ course, onViewDetails }) {
 
-function CourseCard({ course }) {
   const { title, description, category, image, progress, status } = course;
 
   return (
@@ -36,6 +36,7 @@ function CourseCard({ course }) {
           <h3 className="font-heading text-lg font-semibold text-slate-900">
             {title}
           </h3>
+          
           <span
             className={`shrink-0 rounded-full px-3 py-1 text-xs font-semibold ${statusStyles[status]}`}
           >
@@ -59,9 +60,13 @@ function CourseCard({ course }) {
           </div>
         </div>
 
-        <button className="mt-2 w-full rounded-xl bg-primary py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-dark">
-          {buttonLabels[status]}
-        </button>
+<button
+  onClick={() => onViewDetails(course)}
+  className="mt-2 w-full rounded-xl bg-primary py-2.5 text-sm font-semibold text-white transition-colors hover:bg-primary-dark"
+>
+  View Details
+</button>
+
       </div>
     </article>
   );
