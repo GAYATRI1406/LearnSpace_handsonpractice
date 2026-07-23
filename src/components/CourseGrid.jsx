@@ -2,7 +2,7 @@ import CourseCard from "./CourseCard";
 import { FiInbox } from "react-icons/fi";
 
 // Responsive grid: 1 column on mobile, 2 on tablet, 3 on desktop.
-function CourseGrid({ courses }) {
+function CourseGrid({ courses, onViewDetails }) {
   if (courses.length === 0) {
     return (
       <div className="flex flex-col items-center gap-3 rounded-2xl bg-white py-16 text-center shadow-sm">
@@ -20,8 +20,13 @@ function CourseGrid({ courses }) {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
       {courses.map((course) => (
-        <CourseCard key={course.id} course={course} />
-      ))}
+  <CourseCard
+    key={course.id}
+    course={course}
+    onViewDetails={onViewDetails}
+  />
+))}
+    
     </div>
   );
 }

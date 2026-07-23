@@ -1,3 +1,4 @@
+import CourseDetailsModal from "./components/CourseDetailsModal";
 import { useState } from "react";
 import {
   FiBook,
@@ -18,6 +19,7 @@ import { courses, categories } from "./data/courses";
 function App() {
   const [searchText, setSearchText] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
+  const [selectedCourse, setSelectedCourse] = useState(null);
 
   // Learning statistics derived from the course data
   const stats = [
@@ -89,7 +91,10 @@ function App() {
             Pick up where you left off.
           </p>
           <div className="mt-6">
-            <CourseGrid courses={inProgressCourses} />
+            <CourseGrid
+             courses={inProgressCourses}
+             onViewDetails={setSelectedCourse}
+            />
           </div>
         </section>
 
@@ -109,12 +114,22 @@ function App() {
               activeCategory={activeCategory}
               onCategoryChange={setActiveCategory}
             />
-            <CourseGrid courses={filteredCourses} />
+            <CourseGrid
+            courses={filteredCourses}
+            onViewDetails={setSelectedCourse}
+            />
           </div>
         </section>
       </main>
 
       <Footer />
+
+      {selectedCourse && (
+        <CourseDetailsModal
+          course={selectedCourse}
+          onClose={() => setSelectedCourse(null)}
+        />
+      )}
     </div>
   );
 }
